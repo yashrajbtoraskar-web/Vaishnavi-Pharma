@@ -1,9 +1,10 @@
 # 💊 Vaishnavi Pharma
-
 A simple, clean online pharmacy website built with HTML, CSS, and JavaScript.
 
-## 📁 Project Structure
+## 🌐 Live Demo
+👉 **[https://vyaish.vercel.app/](https://vyaish.vercel.app/)**
 
+## 📁 Project Structure
 ```
 Vaishnavi-Pharma/
 ├── index.html          → Home page
@@ -50,7 +51,6 @@ Vaishnavi-Pharma/
 4. Click **Deploy** — done! Vercel gives you a faster, safer URL.
 
 ## ⚠️ Why was my site flagged as "Dangerous"?
-
 GitHub Pages sites can sometimes get flagged by Google Safe Browsing if:
 - The old repository had a security issue reported
 - The domain was previously reported
@@ -58,12 +58,11 @@ GitHub Pages sites can sometimes get flagged by Google Safe Browsing if:
 **Solution:** Delete the old repo and create a fresh one with the same name. The new URL will be clean.
 
 ## 🛠️ Technologies Used
-
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 - GitHub Pages (hosting)
+- Vercel (hosting)
 
 ## 📬 Contact
-
 Built by Yashraj B. Toraskar
