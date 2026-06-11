@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicines — Vaishnavi Pharma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">💊</div>
+        Vaishnavi Pharma
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="medicines.html">Medicines</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="cart.html" class="nav-cart">
+        🛒 Cart
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="medicines.html">💊 Medicines</a>
+        <a href="prescription.html">📄 Prescription</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════ PAGE HERO ════════════════ -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Medicines</div>
+      <h1>💊 All Medicines</h1>
+      <p>Browse our complete range of genuine, quality-assured medicines</p>
+    </div>
+  </div>
+
+  <!-- ════════════════ MEDICINES ════════════════ -->
+  <section class="medicines-page-section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <label for="med-search">🔍</label>
+        <input
+          type="text"
+          id="med-search"
+          class="filter-search"
+          placeholder="Search by name, type…"
+        />
+
+        <label for="cat-filter">Category:</label>
+        <select id="cat-filter">
+          <option value="">All Categories</option>
+          <option value="Tablets">Tablets</option>
+          <option value="Capsules">Capsules</option>
+          <option value="Syrups">Syrups</option>
+          <option value="Vitamins">Vitamins</option>
+          <option value="First Aid">First Aid</option>
+          <option value="Devices">Devices</option>
+        </select>
+
+        <span class="results-count" id="results-count">Showing 16 medicines</span>
+      </div>
+
+      <!-- Medicine Cards — rendered by script.js -->
+      <div class="medicines-grid" id="medicines-grid"></div>
+
+      <!-- Rx Note -->
+      <div class="alert alert-info" style="margin-top:32px">
+        <span>ℹ️</span>
+        <span>Medicines marked <strong>Rx</strong> require a valid prescription.
+          <a href="prescription.html" style="color:var(--blue-dark);font-weight:700">Upload yours →</a>
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon">💊</div>
+          Vaishnavi Pharma
+        </div>
+        <p>Your trusted neighbourhood pharmacy, now online.</p>
+        <div class="footer-socials">
+          <button class="social-btn">📘</button>
+          <button class="social-btn">📷</button>
+          <button class="social-btn">💬</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="medicines.html">Medicines</a></li>
+          <li><a href="prescription.html">Prescription</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="?cat=Tablets">Tablets</a></li>
+          <li><a href="?cat=Capsules">Capsules</a></li>
+          <li><a href="?cat=Syrups">Syrups</a></li>
+          <li><a href="?cat=Vitamins">Vitamins</a></li>
+          <li><a href="?cat=First Aid">First Aid</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Shivajinagar, Pune</a></li>
+          <li><a href="tel:+912012345678">📞 020-1234-5678</a></li>
+          <li><a href="mailto:info@vaishnavi.pharmacy">✉️ info@vaishnavi.pharmacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2025 Vaishnavi Pharma. All rights reserved.</span>
+      <span>Made with ❤️ for better health</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Vaishnavi Pharma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">💊</div>
+        Vaishnavi Pharma
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="medicines.html">Medicines</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="cart.html" class="nav-cart">
+        🛒 Cart
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="medicines.html">💊 Medicines</a>
+        <a href="prescription.html">📄 Prescription</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════ PAGE HERO ════════════════ -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>📞 Get In Touch</h1>
+      <p>We're here to help — reach out anytime</p>
+    </div>
+  </div>
+
+  <!-- ════════════════ CONTACT ════════════════ -->
+  <section class="contact-section">
+    <div class="container contact-layout">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h2>We'd love to hear from you</h2>
+        <p>Have a question about your order, a prescription, or our services? Our friendly team is ready to help. Reach us through any of the channels below.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <h4>Visit Our Store</h4>
+            <p>Shop No. 12, Shivajinagar Market<br>Pune – 411005, Maharashtra</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <h4>Call / WhatsApp</h4>
+            <p>020-1234-5678<br>+91-98765-43210 (WhatsApp)</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@vaishnavi.pharmacy<br>orders@vaishnavi.pharmacy</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">⏰</div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 9:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div style="background:var(--gray-100);border-radius:var(--radius-md);padding:32px;text-align:center;margin-top:8px;border:2px dashed var(--gray-200)">
+          <div style="font-size:2.5rem;margin-bottom:10px">🗺️</div>
+          <p style="color:var(--gray-600);font-size:.9rem">Map integration available<br>with backend / Google Maps API</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Your Name *</label>
+              <input type="text" id="c-name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone Number</label>
+              <input type="tel" id="c-phone" placeholder="Optional" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="c-email">Email Address *</label>
+            <input type="email" id="c-email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="c-subject">Subject *</label>
+            <select id="c-subject" required>
+              <option value="">Select a topic…</option>
+              <option>Order Enquiry</option>
+              <option>Prescription Help</option>
+              <option>Medicine Availability</option>
+              <option>Delivery Issue</option>
+              <option>Refund / Return</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="c-message">Your Message *</label>
+            <textarea id="c-message" rows="5" placeholder="Write your message here…" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            📨 Send Message
+          </button>
+
+          <p style="font-size:.78rem;color:var(--gray-400);text-align:center;margin-top:12px">
+            We typically respond within 2–4 hours during working hours
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════ FAQ STRIP ════════════════ -->
+  <section style="padding:48px 0;background:var(--white)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQs</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+        <div class="rx-info-card">
+          <h4>🚚 How long does delivery take?</h4>
+          <p>Within Pune city limits, we deliver within 30–60 minutes. Suburban areas may take up to 2 hours.</p>
+        </div>
+        <div class="rx-info-card blue">
+          <h4>💳 What payment methods do you accept?</h4>
+          <p>We accept UPI, net banking, debit/credit cards, and Cash on Delivery (COD).</p>
+        </div>
+        <div class="rx-info-card">
+          <h4>🔄 Can I return medicines?</h4>
+          <p>Unopened medicines in original packaging can be returned within 7 days with valid reason. Prescription medicines cannot be returned.</p>
+        </div>
+        <div class="rx-info-card blue">
+          <h4>📄 Do I need a prescription for all medicines?</h4>
+          <p>Only medicines marked "Rx" require a prescription. OTC (over-the-counter) medicines can be ordered freely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon">💊</div>
+          Vaishnavi Pharma
+        </div>
+        <p>Your trusted neighbourhood pharmacy, now online.</p>
+        <div class="footer-socials">
+          <button class="social-btn">📘</button>
+          <button class="social-btn">📷</button>
+          <button class="social-btn">💬</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="medicines.html">Medicines</a></li>
+          <li><a href="prescription.html">Prescription</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="medicines.html?cat=Tablets">Tablets</a></li>
+          <li><a href="medicines.html?cat=Capsules">Capsules</a></li>
+          <li><a href="medicines.html?cat=Syrups">Syrups</a></li>
+          <li><a href="medicines.html?cat=Vitamins">Vitamins</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Shivajinagar, Pune</a></li>
+          <li><a href="tel:+912012345678">📞 020-1234-5678</a></li>
+          <li><a href="mailto:info@vaishnavi.pharmacy">✉️ info@vaishnavi.pharmacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2025 Vaishnavi Pharma. All rights reserved.</span>
+      <span>Made with ❤️ for better health</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Prescription — Vaishnavi Pharma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">💊</div>
+        Vaishnavi Pharma
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="medicines.html">Medicines</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="cart.html" class="nav-cart">
+        🛒 Cart
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="medicines.html">💊 Medicines</a>
+        <a href="prescription.html">📄 Prescription</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════ PAGE HERO ════════════════ -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Prescription</div>
+      <h1>📄 Upload Prescription</h1>
+      <p>Upload your doctor's prescription and we'll prepare your order</p>
+    </div>
+  </div>
+
+  <!-- ════════════════ PRESCRIPTION ════════════════ -->
+  <section class="prescription-section">
+    <div class="container prescription-layout">
+
+      <!-- Left: Upload Form -->
+      <div class="upload-card">
+        <h2>Submit Your Prescription</h2>
+        <p>Upload a clear photo or PDF of your doctor's prescription. Our pharmacist will verify and process your order.</p>
+
+        <form id="rx-form">
+
+          <!-- File Upload Zone -->
+          <div class="upload-zone" id="upload-zone">
+            <input type="file" id="rx-file" accept=".jpg,.jpeg,.png,.pdf,.webp" />
+            <div class="upload-icon">📤</div>
+            <h4>Drag & Drop or Click to Upload</h4>
+            <p>Supports JPG, PNG, PDF (max 10 MB)</p>
+            <p class="formats">Your prescription is safe and private with us 🔒</p>
+          </div>
+
+          <!-- File Preview -->
+          <div class="file-preview" id="file-preview">
+            <span>📎</span>
+            <span class="file-name" id="file-name">filename.pdf</span>
+            <button type="button" class="remove-file" id="remove-file" title="Remove">✕</button>
+          </div>
+
+          <div style="height:24px"></div>
+
+          <!-- Patient Details -->
+          <div class="form-group">
+            <label for="rx-name">Patient Name *</label>
+            <input type="text" id="rx-name" placeholder="Full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="rx-phone">Mobile Number *</label>
+            <input type="tel" id="rx-phone" placeholder="10-digit mobile number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="rx-address">Delivery Address *</label>
+            <textarea id="rx-address" placeholder="Flat, building, street, area, city…" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="rx-notes">Additional Notes</label>
+            <input type="text" id="rx-notes" placeholder="Any specific instructions (optional)" />
+          </div>
+
+          <button type="submit" class="submit-btn">
+            📤 Submit Prescription
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Right: Info Cards -->
+      <div class="rx-info">
+
+        <div class="rx-info-card">
+          <h4>✅ How It Works</h4>
+          <p>
+            1. Upload a clear photo or PDF of your prescription<br>
+            2. Fill in your delivery details<br>
+            3. Our pharmacist reviews it (within 1 hour)<br>
+            4. We confirm & dispatch your order<br>
+            5. Medicines delivered to your door 🏠
+          </p>
+        </div>
+
+        <div class="rx-info-card blue">
+          <h4>📸 Tips for a Good Upload</h4>
+          <p>
+            • Ensure the prescription is clearly legible<br>
+            • Include the doctor's name, date & stamp<br>
+            • Photo should be well-lit — avoid shadows<br>
+            • Upload the complete prescription, all pages<br>
+            • File size should be under 10 MB
+          </p>
+        </div>
+
+        <div class="rx-info-card">
+          <h4>🔒 Your Privacy Matters</h4>
+          <p>
+            Your prescription is handled with complete confidentiality. It is only viewed by our licensed pharmacist and is never shared with third parties. We comply with all pharmaceutical data regulations.
+          </p>
+        </div>
+
+        <div class="rx-info-card blue">
+          <h4>📞 Need Help?</h4>
+          <p>
+            Call us at <strong>020-1234-5678</strong> or WhatsApp <strong>+91-98765-43210</strong>.<br>
+            Our pharmacist is available Mon–Sat, 9 AM to 9 PM.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon">💊</div>
+          Vaishnavi Pharma
+        </div>
+        <p>Your trusted neighbourhood pharmacy, now online.</p>
+        <div class="footer-socials">
+          <button class="social-btn">📘</button>
+          <button class="social-btn">📷</button>
+          <button class="social-btn">💬</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="medicines.html">Medicines</a></li>
+          <li><a href="prescription.html">Prescription</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="medicines.html?cat=Tablets">Tablets</a></li>
+          <li><a href="medicines.html?cat=Vitamins">Vitamins</a></li>
+          <li><a href="medicines.html?cat=First Aid">First Aid</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Shivajinagar, Pune</a></li>
+          <li><a href="tel:+912012345678">📞 020-1234-5678</a></li>
+          <li><a href="mailto:info@vaishnavi.pharmacy">✉️ info@vaishnavi.pharmacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2025 Vaishnavi Pharma. All rights reserved.</span>
+      <span>Made with ❤️ for better health</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
